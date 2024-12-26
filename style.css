@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+
+}
+
+.card .img {
+    position: fixed;
+    top: 0px;
+    left: 315px;
+    animation-name: imgAnime;
+}
+
+@keyframes imgAnime {
+    0% {
+        top: 0;
+        left: 315px;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: 0px;
+        left: 315px;
+        transform: rotate(360deg);
+    }
+}
+
+.card .car {
+    margin: auto;
+    transform: scaleY(1);
+    position: absolute;
+    top: 120px;
+    z-index: 4;
+}
+
+
+.card .car .wheel {
+    width: 210px;
+    position: absolute;
+    top: 260px;
+    left: 382px;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-name: wheelAnime;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes wheelAnime {
+    0% {
+        top: 260px;
+        left: 322px;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: 260px;
+        left: 323px;
+        transform: rotate(360deg);
+    }
+}
+
+.card .car .wheel1 {
+    position: absolute;
+    top: 3px;
+    left: 300px;
+    animation-name: wheel1Anime;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheel1Anime {
+    0% {
+        top: 263px;
+        left: 680px;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: 261px;
+        left: 679px;
+        transform: rotate(360deg);
+    }
+}
+
+
+.card .tree {
+    position: absolute;
+    right: 0;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: treeAnime;
+    z-index: 1;
+}
+
+@keyframes treeAnime {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
